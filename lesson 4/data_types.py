@@ -1,3 +1,4 @@
+
 # String data type
 
 # literal assignment
@@ -80,11 +81,49 @@ print(first.startswith("J"))
 print(first.endswith("k"))
 
 # Boolean data type
+value = False
+x = bool(False)
+print(type(x))
+print(isinstance(x, bool))
+
+# numeric data types
+
+# integer
+price = 100
+best_price = int(99)
+print(type(price))
+print(isinstance(best_price, int))
+
+# float type
+gpa = 3.55539
+y = float(10.32)
+print(type(y))
+
+# complex
+comp_value = 3+6j
+print(type(comp_value))
+print(comp_value.real)
+print(comp_value.imag)
 
 
+# Built-in functions for numeric types
+print(abs(gpa * -1))
+print(round(gpa, 2))
+
+import math
+print("")
+print(math.pi)
+print(math.sqrt(32))
+print(math.ceil(gpa))
+print(math.floor(gpa))
+
+# Casting a string to a number
+zipcode = "10010"
+zip_value = int(zipcode)
+print(type(zip_value))
 
 
-
-
+# Error if you attempt to cast incorect data(eg non-numetic
+# zip_value = int("New York")
 
 
